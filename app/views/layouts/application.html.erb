@@ -11,8 +11,15 @@
   </head>
 
   <body>
+    <% if params[:action] == "index" && params[:controller] == "cocktails" %>
+      <%= render "layouts/navbar", navClass: "bg-transparent" %>
+    <% else %>
+      <%= render "layouts/navbar", navClass: "bg-solid" %>
+    <% end %>
     <%= yield %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
+
+
 </html>

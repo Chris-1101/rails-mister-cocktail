@@ -7,5 +7,9 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 import 'bootstrap';
+import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initScrollToCocktails } from '../components/banner';
 
-console.log('Hello World from Webpacker')
+console.log('Hello World from Webpacker');
+initUpdateNavbarOnScroll();
+initScrollToCocktails();

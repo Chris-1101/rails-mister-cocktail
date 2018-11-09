@@ -1,0 +1,29 @@
+.spacer {
+  height: 3px;
+  background: black;
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.card {
+  position: relative;
+  height: 170px;
+  padding: 20px;
+  background-size: cover;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 20px 5px;
+
+  a {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+  }
+}
